@@ -1,5 +1,7 @@
 ﻿If you want to enable hello world WCF communication - you will need to write the client code and wire this up in your web.config
 
+I put it right above the </configuration> closing tag at the bottom of the web.config.
+
 <system.serviceModel>
     <behaviors>
         <endpointBehaviors>
