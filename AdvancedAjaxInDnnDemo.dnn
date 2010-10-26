@@ -1,0 +1,75 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages><package name="AdvancedAjaxInDnnDemo" type="Module" version="0.0.1">
+  <friendlyName>Advanced Ajax in DNN Demo</friendlyName>
+  <description>This is a simple demo project to accompany the Advanced jQuery: Putting the Asynchronous Back in AJAX presentation from SDC / OpenForce Europe 2010 by Ian Robinson. It demonstrates data collection strategies, Rick Strahl's ServiceProxy.js (jQuery Ajax wrapper) and using both WCF and ASMX web services.</description>
+  <owner>
+    <name>Ian Robinson</name>
+    <organization>R2integrated</organization>
+    <url>http://www.r2idnn.com</url>
+    <email>irobinson@r2integrated.com</email>
+  </owner>
+  <license />
+  <releaseNotes />
+  <components>
+    <component type="Module">
+      <desktopModule>
+        <moduleName>AdvancedAjaxInDnnDemo</moduleName>
+        <foldername>AdvancedAjaxInDnnDemo</foldername>
+        <businessControllerClass />
+        <supportedFeatures />
+        <moduleDefinitions>
+          <moduleDefinition>
+            <friendlyName>AdvancedAjaxInDnnDemo</friendlyName>
+            <defaultCacheTime>0</defaultCacheTime>
+            <moduleControls>
+              <moduleControl>
+                <controlKey />
+                <controlSrc>DesktopModules/AdvancedAjaxInDnnDemo/View.ascx</controlSrc>
+                <supportsPartialRendering>False</supportsPartialRendering>
+                <controlTitle />
+                <controlType>View</controlType>
+                <iconFile />
+                <helpUrl />
+              </moduleControl>
+            </moduleControls>
+          </moduleDefinition>
+        </moduleDefinitions>
+      </desktopModule>
+    </component>
+    <component type="Assembly">
+      <assemblies>
+        <basePath>bin</basePath>
+        <assembly>
+          <name>AdvancedAjaxInDnnDemo.dll</name>
+        </assembly>
+      </assemblies>
+    </component>
+    <component type="File">
+      <files>
+        <basePath>DesktopModules\AdvancedAjaxInDnnDemo</basePath>
+        <file>
+          <path>Scripts</path>
+          <name>ServiceProxy.js</name>
+        </file>
+        <file>
+          <path>Scripts</path>
+          <name>View.js</name>
+        </file>
+        <file>
+          <name>Service1.svc</name>
+        </file>
+        <file>
+          <name>View.ascx</name>
+        </file>
+        <file>
+          <name>WebService1.asmx</name>
+        </file>
+        <file>
+          <path>App_LocalResources</path>
+          <name>View.ascx.resx</name>
+        </file>
+      </files>
+    </component>
+  </components>
+</package></packages>
+</dotnetnuke>
