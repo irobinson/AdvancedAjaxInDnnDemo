@@ -74,6 +74,7 @@
     <Content Include="Scripts\View.js" />
     <Content Include="Service1.svc" />
     <Content Include="View.ascx" />
+    <Content Include="wcf service web config changes.txt" />
     <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>

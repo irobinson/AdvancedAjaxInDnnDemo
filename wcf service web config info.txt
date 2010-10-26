@@ -1,0 +1,18 @@
+﻿If you want to enable hello world WCF communication - you will need to write the client code and wire this up in your web.config
+
+<system.serviceModel>
+    <behaviors>
+        <endpointBehaviors>
+            <behavior name="HelloWCFWorld.Service1AspNetAjaxBehavior">
+                <enableWebScript />
+            </behavior>
+        </endpointBehaviors>
+    </behaviors>
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />
+    <services>
+        <service name="HelloWCFWorld.Service1">
+            <endpoint address="" behaviorConfiguration="HelloWCFWorld.Service1AspNetAjaxBehavior"
+                binding="webHttpBinding" contract="HelloWCFWorld.Service1" />
+        </service>
+    </services>
+</system.serviceModel>
