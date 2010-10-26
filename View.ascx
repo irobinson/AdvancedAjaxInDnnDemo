@@ -13,11 +13,15 @@
 <script type="text/javascript" src="<%= ResolveUrl("Scripts/ServiceProxy.js") %>"></script>
 <script type="text/javascript" src="<%= ResolveUrl("Scripts/View.js") %>"></script>
 
-<h3>Hello World</h3>
+<h3>Hello World ASMX</h3>
 <input type="text" id="helloText" />
 <input type="button" value="Hello" id="helloButton" />
 
-<h3>Add Income</h3>
+<h3>Hello World WCF</h3>
+<input type="text" id="helloTextWCF" />
+<input type="button" value="Hello" id="helloButtonWCF" />
+
+<h3>Data Collection Example</h3>
 <div class="input-area">
     <div class="add-income form-row">
         <label for="IncomeCategoryList"><%= Localization.GetString("Income Category.Label", this.LocalResourceFile) %></label>

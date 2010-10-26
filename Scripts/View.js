@@ -11,6 +11,12 @@ $(document).ready(function () {
         proxy.invoke("Hello", { to: helloText }, function (result) { alert(result); });
     });
 
+    $('#helloButtonWCF').click(function () {
+        var helloText = $('#helloTextWCF').val();
+        var proxy = new ServiceProxy("/DesktopModules/AdvancedAjaxInDnnDemo/Service1.svc/");
+        proxy.invoke("Hello", { to: helloText }, function (result) { alert(result); });
+    });
+
     $('#income-add-button').click(function () {
         var category = $('#IncomeCategoryList :selected').text();
         var categoryId = $('#IncomeCategoryList :selected').val();
