@@ -45,17 +45,19 @@ $(document).ready(function () {
 
     $('#submit-items').click(function (e) {
         e.preventDefault();
-        var items = new Array();
-        $('#income-list li').each(function (intIndex) {
-            var $item = $(this);
-            var incomeItem = {
-                CategoryId: $item.data('categoryId'),
-                Amount: $item.data('amount')
-            }
-            items.push(incomeItem);
-        });
+        if ($('#Form').validate().form()) {
+            var items = new Array();
+            $('#income-list li').each(function (intIndex) {
+                var $item = $(this);
+                var incomeItem = {
+                    CategoryId: $item.data('categoryId'),
+                    Amount: $item.data('amount')
+                }
+                items.push(incomeItem);
+            });
 
-        var proxy = new ServiceProxy("/DesktopModules/AdvancedAjaxInDnnDemo/WebService1.asmx/");
-        proxy.invoke("Save", { userId: DemoViewContext.UserId, incomeItems: items }, function (result) { alert(result); });
+            var proxy = new ServiceProxy("/DesktopModules/AdvancedAjaxInDnnDemo/WebService1.asmx/");
+            proxy.invoke("Save", { userId: DemoViewContext.UserId, incomeItems: items }, function (result) { alert(result); });
+        }
     });
 });

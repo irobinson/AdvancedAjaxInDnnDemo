@@ -70,15 +70,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\jquery.validate.pack.js" />
     <Content Include="Scripts\ServiceProxy.js" />
     <Content Include="Scripts\View.js" />
     <Content Include="Service1.svc" />
     <Content Include="View.ascx" />
-    <Content Include="wcf service web config changes.txt" />
+    <Content Include="Documents\wcf service web config info.txt" />
     <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_LocalResources\View.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documents\Advanced jQuery - Putting the Asynchronous Back in AJAX.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

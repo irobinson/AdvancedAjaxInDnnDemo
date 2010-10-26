@@ -10,6 +10,7 @@
     };
 </script>
 
+<script type="text/javascript" src="<%= ResolveUrl("Scripts/jquery.validate.pack.js") %>"></script>
 <script type="text/javascript" src="<%= ResolveUrl("Scripts/ServiceProxy.js") %>"></script>
 <script type="text/javascript" src="<%= ResolveUrl("Scripts/View.js") %>"></script>
 
